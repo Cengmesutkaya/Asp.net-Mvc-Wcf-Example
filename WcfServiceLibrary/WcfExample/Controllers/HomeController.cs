@@ -23,6 +23,9 @@ namespace WcfExample.Controllers
             var TotalMultiple = _clientInternal.Multiple(12, 12);
             ViewBag.Result3 = TotalMultiple;
 
+            var TotalDivision = _clientInternal.Division(12, 0);
+            ViewBag.Result4 = TotalDivision;
+
             return View();
         }
     }

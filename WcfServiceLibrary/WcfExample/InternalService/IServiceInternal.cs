@@ -13,5 +13,7 @@ namespace WcfExample.InternalService
     {
         [OperationContract]
         int Multiple(int num1, int num2);
+        [OperationContract]
+        int Division(int num1, int num2);
     }
 }
