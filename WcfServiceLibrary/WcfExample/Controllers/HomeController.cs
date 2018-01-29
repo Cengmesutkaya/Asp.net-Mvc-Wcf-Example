@@ -10,8 +10,10 @@ namespace WcfExample.Controllers
 {
     public class HomeController : Controller
     {
-        IService client = new Service(); // Burada polimorfizm nimettinden yararlanılmıştır. Wcf Libraryden gelen Service Örneği
-        IServiceInternal _clientInternal = new ServiceInternal();
+        Service client = new Service(); // Burada polimorfizm nimettinden yararlanılmıştır. Wcf Libraryden gelen Service Örneği
+
+        ServiceInternal _clientInternal = new ServiceInternal();
+
         public ActionResult Index()
         {
             var TotalResult = client.Add(5, 8);
