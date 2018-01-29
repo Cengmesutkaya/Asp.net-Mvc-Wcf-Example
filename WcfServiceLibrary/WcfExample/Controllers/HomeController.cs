@@ -10,7 +10,7 @@ namespace WcfExample.Controllers
 {
     public class HomeController : Controller
     {
-        Service client = new Service(); // Burada polimorfizm nimettinden yararlanılmıştır. Wcf Libraryden gelen Service Örneği
+        Service client = new Service(); 
 
         ServiceInternal _clientInternal = new ServiceInternal();
 
